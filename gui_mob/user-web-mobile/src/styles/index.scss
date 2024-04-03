@@ -1,0 +1,251 @@
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+  background: linear-gradient(90deg, #DBE9FC, #91D4FF);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.el-input {
+  // width: 350px;
+  width: 100%;
+}
+
+.el-input__inner {
+  border-color: black;
+  border-width: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.el-input__inner:focus,
+.el-input__inner:hover {
+  border-color: black;
+}
+
+
+.el-button {
+  width: min-content;
+  // width: 105px;
+  background: linear-gradient(180deg, #DBE9FC, #99C1F9);
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+  // text-align: left;
+  border: 2px solid black;
+  // padding: 12px 18px;
+}
+
+.el-button--mini {
+  padding: 3px 8px;
+}
+
+.el-button:focus,
+.el-button:hover {
+  color: black;
+  border-color: black;
+  background: linear-gradient(180deg, #DBE9FC, #99C1F9);
+}
+
+.el-range-editor.is-active,
+.el-range-editor.is-active:hover,
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: black;
+}
+
+.el-select:hover .el-input__inner {
+  border-color: black;
+}
+
+.el-select .el-input__inner:focus,
+.el-select .el-input__inner:hover {
+  border-color: black;
+}
+
+.el-select .el-input .el-select__caret {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.el-select-dropdown__item {
+  color: black;
+  font-size: 20px;
+}
+
+.el-select-dropdown__item.selected {
+  color: black;
+  font-size: 20px;
+}
+
+.el-select-dropdown {
+  border: 2px solid black;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: black;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+  top: 2px;
+}
+
+.el-input-number {
+  width: 350px;
+
+  .el-icon-arrow-up,
+  .el-icon-arrow-down {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.el-input-number .el-input__inner {
+  text-align: left;
+}
+
+.el-input-number.is-controls-right .el-input-number__decrease {
+  border-left: none;
+  bottom: -1px;
+}
+
+.el-input-number.is-controls-right .el-input-number__increase {
+  border-bottom: none;
+  top: -1px;
+}
+
+.el-input-number__decrease,
+.el-input-number__increase {
+  background: transparent;
+  border: none;
+
+  &:hover {
+    &:not(.is-disabled)~.el-input .el-input__inner:not(.is-disabled) {
+      border-color: black;
+    }
+  }
+}
+
+.el-input-number.is-controls-right .el-input-number__decrease [class*=el-icon],
+.el-input-number.is-controls-right .el-input-number__increase [class*=el-icon] {
+  transform: none;
+}
+
+.el-input-number .el-input__inner:hover {
+  border-color: black;
+}
+
+.el-picker-panel {
+  border-color: black;
+  border-width: 2px;
+}
+
+.el-date-table td.current:not(.disabled) span {
+  background-color: rgb(21, 96, 130);
+}
+
+.el-date-table td.today span {
+  color: rgb(21, 96, 130);
+}
+
+.el-date-table td.available:hover {
+  color: rgb(21, 96, 130);
+}
+
+.el-date-picker__header-label {
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.el-picker-panel__icon-btn, .el-picker-panel__icon-btn:hover {
+  color: black;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.el-date-picker__header-label.active, .el-date-picker__header-label:hover {
+  color: rgb(21, 96, 130);
+}
+
+.el-month-table td .cell:hover {
+  color: rgb(21, 96, 130);
+}
+
+.el-year-table td .cell:hover, .el-year-table td.current:not(.disabled) .cell {
+  color: rgb(21, 96, 130);
+}
+
+.el-year-table td.today .cell {
+  color: rgb(21, 96, 130);
+}
+
+.el-date-editor .el-icon-date {
+  // display: none;
+}
+
+.el-input__prefix {
+  left: auto;
+  right: 7px;
+}
+
+.el-input--prefix .el-input__inner {
+  padding-left: 15px;
+}
+
+.el-input__prefix, .el-input__suffix {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text-cut {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.text-two-cut {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}

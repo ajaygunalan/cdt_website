@@ -1,4 +1,16 @@
-Deployment process: Install php, composer, node, npm locally on your computer.
+
+
+
+## Install Prerequisites:
+
+```
+sudo apt install php
+sudo apt install composer
+sudo apt install nodejs
+sudo apt install npm
+sudo apt install nginx
+```
+
 Please do not include any Chinese characters in the following file paths.
 
 It is recommended to deploy in a testing environment first, and after testing, deploy to the production environment. Pay attention to port conflicts such as 3306 and 80 during deployment.
