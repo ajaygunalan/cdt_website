@@ -22,7 +22,10 @@ It is recommended to deploy in a testing environment first, and after testing, d
 2. Create a new nginx project on the server. Set the document root to the backend path /public, and configure pseudo-static.
 3. In the backend path /application/database.php, modify the database username and password.
 
+
 ## Frontend 
 1. Run npm install to install dependencies for all three frontend projects.
 2. Run npm run build to compile the projects for all three frontend projects.
 3. Create three new pure static projects in nginx and run the three frontend websites.
+
+
